@@ -1,0 +1,223 @@
+/* Base Styles */
+/* General body styles: modern font, light background, and dark text for readability */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light grayish blue for a modern look */
+    color: #333; /* Dark gray text */
+}
+
+/* Header */
+/* Styles for the website's top header */
+header {
+    background-color: #212529; /* Sleek dark background */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Large, bold title */
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem; /* Subtle subtitle */
+    color: #adb5bd; /* Muted gray for secondary text */
+}
+
+/* Navigation Bar */
+/* Links in the navigation bar */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffffff; /* White text links */
+    text-decoration: none;
+    font-size: 1rem; /* Standard size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    color: #f8c146; /* Golden accent for hover effect */
+}
+
+/* Main Content Area */
+/* Wrapper for main page content */
+main {
+    padding: 40px;
+    max-width: 1200px; /* Limits the width for better readability */
+    margin: 0 auto; /* Centers the content */
+}
+
+/* Container for a grid layout */
+.container {
+    display: grid; /* Uses grid layout for responsive design */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between items */
+}
+
+/* Cards */
+/* Styling for individual cards */
+.card {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners for a modern feel */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures child elements stay inside */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    display: flex; /* Flex layout for structured content */
+    flex-direction: column;
+    justify-content: space-between; /* Evenly spaces content vertically */
+}
+
+/* Animation on hover to lift the card */
+.card:hover {
+    transform: translateY(-5px); /* Moves card slightly up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Header section of the card */
+.card-header {
+    background-color: #f8c146; /* Bright golden color for header */
+    color: #212529; /* Dark text for contrast */
+    padding: 15px;
+    font-size: 1.2rem; /* Slightly larger text */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Main body section of the card */
+.card-body {
+    padding: 20px;
+    font-size: 1rem;
+    color: #495057; /* Subtle gray for text */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Footer section of the card */
+.card-footer {
+    background-color: #e9ecef; /* Light gray footer */
+    padding: 10px 20px;
+    text-align: right; /* Aligns content to the right */
+    display: flex;
+    justify-content: space-between; /* Space between buttons and text */
+    align-items: center;
+}
+
+/* Buttons inside card footer */
+.card-footer .btn {
+    background-color: #dc3545; /* Bold red for CTA buttons */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px; /* Smooth button edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover animation */
+}
+
+.card-footer .btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Buttons */
+/* General button styles */
+button, .btn {
+    background-color: #28a745; /* Success green */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover, .btn:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+/* Footer */
+/* Styles for the website's footer */
+footer {
+    background-color: #212529; /* Dark background for footer */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem; /* Smaller font for secondary info */
+    margin-top: 40px; /* Space above footer */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Shadow at the top */
+}
+
+/* Links in the footer */
+footer a {
+    color: #f8c146; /* Golden accent for links */
+    text-decoration: none;
+    margin-left: 5px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer a:hover {
+    color: #ffffff; /* White color on hover */
+}
+
+/* Forms */
+/* Form wrapper for better structure */
+form {
+    max-width: 600px; /* Limits form width */
+    margin: 20px auto; /* Centers form */
+    padding: 20px;
+    background: #ffffff; /* White background for focus */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form field styles */
+form .form-group {
+    margin-bottom: 20px; /* Spacing between fields */
+}
+
+/* Labels for form fields */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Inputs, selects, and textareas styling */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Focused fields with glowing border */
+form input:focus, form select:focus, form textarea:focus {
+    outline: none;
+    border-color: #f8c146; /* Golden glow */
+    box-shadow: 0 0 4px rgba(248, 193, 70, 0.5);
+}
+
+/* Submit button in forms */
+form button {
+    background-color: #007bff; /* Blue button for submission */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

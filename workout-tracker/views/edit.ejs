@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Workout</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Edit Workout</h1>
+  </header>
+
+  <main>
+    <form action="/workouts/<%= workout._id %>" method="POST">
+      <label for="name">Workout Name:</label>
+      <input type="text" name="name" value="<%= workout.name %>" required>
+      <label for="duration">Duration:</label>
+      <input type="text" name="duration" value="<%= workout.duration %>" required>
+      <label for="description">Description:</label>
+      <input type="text" name="description" value="<%= workout.description %>">
+      <button type="submit">Update Workout</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Workout Tracker</p>
+  </footer>
+</body>
+</html>

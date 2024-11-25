@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        // This is used to launch Chrome in debugging mode. 
+        // It will open the website hosted locally on port 9000.
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:9001",
+        "webRoot": "${workspaceFolder}"
+      },
+      
+      {
+        // Another configuration to launch Chrome with the same settings.
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://localhost:9001",
+        "webRoot": "${workspaceFolder}"
+      },
+  
+      {
+        // Configuration to launch Chrome against localhost for debugging.
+        "type": "chrome",
+        "request": "launch",
+        "name": "Launch Chrome against localhost", 
+        "url": "http://localhost:9001",
+        "webRoot": "${workspaceFolder}"
+      },
+  
+      {
+        // New configuration for launching the Node.js application.
+        // It will start the app.js file, which is the main entry point of the application.
+        // The MONGO_URI environment variable is set to connect to MongoDB on localhost.
+        "name": "Launch Program",
+        "type": "node",
+        "request": "launch",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/app.js",
+        "env": {
+          // MongoDB URI to connect to the local MongoDB instance (replace if necessary).
+          "MONGO_URI": "mongodb://localhost:27017/workout-tracker"
+        }
+      }
+    ]
+  }
